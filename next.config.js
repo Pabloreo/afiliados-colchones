@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['assets.vercel.com', 'storage.googleapis.com'],
+    minimumCacheTTL: 1500000,
+  },
 }
 
 module.exports = nextConfig

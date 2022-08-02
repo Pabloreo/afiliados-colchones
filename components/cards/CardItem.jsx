@@ -1,7 +1,7 @@
-import React from 'react';
-import Rating from '@mui/material/Rating';
-import styles from './card.module.css'
-import Image from 'next/image';
+import React from "react";
+import Rating from "@mui/material/Rating";
+import styles from "./card.module.css";
+import Image from "next/image";
 
 const CarItem = (props) => {
   return (
@@ -18,20 +18,20 @@ const CarItem = (props) => {
           />
           <h3>
             {props.rating >= 4.5
-              ? 'Excelente'
+              ? "Excelente"
               : props.rating >= 4 && props.rating < 4.5
-              ? 'Muy bueno'
+              ? "Muy bueno"
               : props.rating >= 3 && props.rating < 4
-              ? 'Bueno'
+              ? "Bueno"
               : props.rating >= 2 && props.rating < 3
-              ? 'Regular'
+              ? "Regular"
               : props.rating >= 1 && props.rating < 2
-              ? 'Malo'
-              : 'Muy malo'}
+              ? "Malo"
+              : "Muy malo"}
           </h3>
         </div>
         <div className={styles.card_image}>
-          <Image src={props.image} width={400} alt={props.title} />
+          <Image src={props.image} height="150" width="150" alt={props.title} />
         </div>
 
         <div className={styles.card_attributes}>
