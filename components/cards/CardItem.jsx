@@ -39,7 +39,7 @@ const CarItem = (props) => {
           <p>{`${props.description.substring(0, 60)}...`}</p>
         </div>
         <div className={styles.card_url}>
-          <a href={props.link} target="_blank">
+          <a href={props.link} target="_blank" rel="noreferrer">
             Ver más
           </a>
         </div>
