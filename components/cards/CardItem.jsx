@@ -1,6 +1,7 @@
 import React from 'react';
 import Rating from '@mui/material/Rating';
 import styles from './card.module.css'
+import Image from 'next/image';
 
 const CarItem = (props) => {
   return (
@@ -30,7 +31,7 @@ const CarItem = (props) => {
           </h3>
         </div>
         <div className={styles.card_image}>
-          <img src={props.image} width={400} alt={props.title} />
+          <Image src={props.image} width={400} alt={props.title} />
         </div>
 
         <div className={styles.card_attributes}>
