@@ -1,0 +1,42 @@
+.navbar {
+    position: relative;
+    padding: 1em 0;
+    box-shadow: 0 1px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.navbar_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_logo_image {
+     object-fit: contain;
+     cursor: pointer;
+}
+
+.navbar_navigation {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_navigation a {
+    margin: 0 1em;
+}
+
+.navbar_navigation_mobile {
+     position: absolute;
+     width: 30px;
+     top: 10px;
+     left: 10px;
+}
+
+@media (min-width: 768px) {
+    .navbar_navigation {
+        display: flex;
+    }
+    .navbar_navigation_mobile {
+        display: none;
+   }
+}

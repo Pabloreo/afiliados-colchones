@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+.card {
+  border: solid 1px #ebebeb;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 0 10px 0 #e3e5e9;
+  margin: 1em auto;
+}
+
+.card_item,
+.card_ratings,
+.card_attributes,
+.card_url {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_ratings h2 {
+  font-size: 3rem;
+  margin: 0.2em auto;
+  font-weight: 400;
+}
+
+.card_ratings h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5em auto;
+}
+
+.card_image {
+  margin: 1em auto;
+}
+
+.card_image img {
+  margin: 0;
+}
+
+.card_attributes h4 {
+  text-transform: uppercase;
+}
+
+.card_attributes p {
+  margin: 0.2em auto;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.card_url a {
+  background-color: #3e5869;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 0.5em auto;
+  border-radius: 10px;
+  min-width: 120px;
+}
+.card_url a:hover {
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .card_item {
+    flex-direction: row;
+  }
+  .card_item,
+  .card_ratings,
+  .card_image,
+  .card_attributes,
+  .card_url {
+    margin: 0 1em;
+  }
+}
