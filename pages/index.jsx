@@ -14,24 +14,24 @@ export default function Home() {
   return (
     <MainLayout>
       <Hero />
-
       <h1>Los mejores colchones de México</h1>
-
-      {dataApi
-        .sort((a, b) => b.attributes.Rating - a.attributes.Rating)
-        .map((item, i) => {
-          return (
-            <CardItem
-              key={i}
-              title={item.attributes.Title}
-              rating={item.attributes.Rating}
-              description={item.attributes.Description}
-              link={item.attributes.Link}
-              position={item.attributes.position}
-              image={item.attributes.ImageLink}
-            />
-          );
-        })}
+      <div className="index-container">
+        {dataApi
+          .sort((a, b) => b.attributes.Rating - a.attributes.Rating)
+          .map((item, i) => {
+            return (
+              <CardItem
+                key={i}
+                title={item.attributes.Title}
+                rating={item.attributes.Rating}
+                description={item.attributes.Description}
+                link={item.attributes.Link}
+                position={item.attributes.position}
+                image={item.attributes.ImageLink}
+              />
+            );
+          })}
+      </div>
     </MainLayout>
   );
 }

@@ -7,6 +7,7 @@ const CarItem = (props) => {
   return (
     <div className={styles.card}>
       <div className={styles.card_item}>
+        <h1>{props.title}</h1>
         <div className={styles.card_ratings}>
           <h2>{props.rating}</h2>
           <Rating
@@ -35,8 +36,8 @@ const CarItem = (props) => {
         </div>
 
         <div className={styles.card_attributes}>
-          <h4>{props.title}</h4>
-          <p>{`${props.description.substring(0, 60)}...`}</p>
+          {/* <p>{`${props.description.substring(0, 60)}...`}</p> */}
+          <p>{props.description}</p>
         </div>
         <div className={styles.card_url}>
           <a href={props.link} target="_blank" rel="noreferrer">

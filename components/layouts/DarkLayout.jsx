@@ -1,5 +1,3 @@
-
-
 export const DarkLayout = ({ children }) => {
   return (
     <div style={{
